@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maggie</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+
+    <div class="btu">
+        <a href="index.html" target="_blank">HOME</a>
+    </div>
+
+    <div class="container">
+        <div>
+            <h1>
+                Maggie
+                <img src="images/maggie.jfif" alt="">
+            </h1>
+        </div>
+        <div class="pie">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+                google.charts.load('current', {
+                    'packages': ['corechart']
+                });
+                google.charts.setOnLoadCallback(drawChart);
+
+                function drawChart() {
+
+                    var data = google.visualization.arrayToDataTable([
+                        ['Task', 'Hours per Day'],
+                        ['Maggie', 11],
+                        ['Week', 2],
+                        ['Month', 2],
+                        ['Year', 2],
+                        ['Holiday', 7]
+                    ]);
+
+                    var options = {
+                        title: 'Product Forcasting'
+                    };
+
+                    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                    chart.draw(data, options);
+                }
+            </script>
+            <div id="piechart" style="width: 900px; height: 350px;"></div>
+        </div>
+    </div>
+
+    <hr style="height:4px;border-width:0;color:gray;background-color:gray">
+
+    <h1>
+
+    </h1>
+    <div>
+
+    </div>
+</body>
+
+</html>

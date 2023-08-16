@@ -1,0 +1,34 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body h1 {
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.btu {
+    display: flex;
+    background-color: #e7dcf5;
+    padding: 22px;
+    width: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin: 32px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+.container h1 {
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.pie {
+    padding-left: 400px;
+}

@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #eee9f4;
+}
+
+.btu {
+    display: flex;
+    background-color: #e7dcf5;
+    padding: 22px;
+    width: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin: 32px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.review img {
+    height: 60%;
+    width: 60%;
+    align-items: center;
+    margin-left: 250px;
+    margin-bottom: 50px;
+}
+
+.review h1 {
+    padding-left: 280px;
+    padding-bottom: 50px;
+}

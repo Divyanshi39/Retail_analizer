@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca Cola</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="btu">
+        <a href="index.html" target="_blank">HOME</a>
+    </div>
+
+    <div class="container">
+        <div>
+            <h1>
+                Coca Cola
+                <img src="Coca-Cola.jpg" alt="Coke img">
+            </h1>
+        </div>
+        <div class="pie">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+                google.charts.load('current', {
+                    'packages': ['corechart']
+                });
+                google.charts.setOnLoadCallback(drawChart);
+
+                function drawChart() {
+
+                    var data = google.visualization.arrayToDataTable([
+                        ['Task', 'Hours per Day'],
+                        ['Coca Cola', 11],
+                        ['Week', 2],
+                        ['Month', 2],
+                        ['Year', 2],
+                        ['Holiday', 7]
+                    ]);
+
+                    var options = {
+                        title: 'Product Forcasting'
+                    };
+
+                    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                    chart.draw(data, options);
+                }
+            </script>
+            <div id="piechart" style="width: 900px; height: 450px;"></div>
+        </div>
+    </div>
+
+    <hr style="height:4px;border-width:0;color:gray;background-color:gray">
+
+    <div class="month">
+        <h1>
+            Total Weekly sales = $ 3.0
+            <img src="images/wl10.jpg" alt="bar-graph">
+        </h1>
+    </div>
+
+    <hr style="height:4px;border-width:0;color:gray;background-color:gray">
+
+    <div class="container1">
+        <div>
+            <h2>
+                Bubble Chart Representation of Weekly Sales :
+            </h2>
+            <img src="images/maggiebubble.jpg" alt="maggie">
+        </div>
+
+        <div>
+            <h2>
+                Sales On Holidays :
+            </h2>
+            <img src="images/walmart2.jpg" alt="weekc">
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <div>
+            <h2>
+                Testing & Training DataSets :
+            </h2>
+            <img src="images/walmart3.jpg" alt="maggie">
+            <img src="images/walmart5.jpg" alt="maggie">
+        </div>
+
+    </div>
+
+    <div class="container3">
+        <div>
+            <h1>
+                Accuracy = 96 % of Model :
+            </h1>
+            <img src="images/walmart6.jpg" alt="maggie">
+        </div>
+    </div>
+
+    <div class="container4">
+        <div>
+            <h1>
+                DataSets :
+            </h1>
+            <img src="images/walmart9.jpg" alt="maggie">
+        </div>
+    </div>
+
+</body>
+
+</html>
